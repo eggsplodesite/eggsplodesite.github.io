@@ -16,27 +16,21 @@ window.RobloxEventManager = window.RobloxEventManager || {
 };
 </script>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
-
 <title>Eggsplode! (wip)</title>
-
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
 <link rel="icon" href="/egg.png">
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700"
       rel="stylesheet">
 
-
 <link rel="stylesheet" href="css/leanbase.css">
 <link rel="stylesheet" href="css/page.css">
-
 
 <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
 
@@ -46,10 +40,7 @@ window.jQuery || document.write(
 );
 </script>
 
-
 <script src="//ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-1.2.1.min.js"></script>
-
-
 
 <style>
 
@@ -57,77 +48,44 @@ window.jQuery || document.write(
     background-repeat: no-repeat;
 }
 
-
 #RollerContainer {
     background-image: url('/images/RollerCoaster.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 #InnerWhatsRobloxContainer1 {
-
     height:70%;
-
-    background-image:
-    url('/images/KnightInArmor.jpg');
-
+    background-image: url('/images/KnightInArmor.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:30% center;
-
     color:white;
-
 }
-
-
 
 #GameImage1 {
-
-    background-image:
-    url('/images/PlayersUnderwater.jpg');
-
+    background-image: url('/images/PlayersUnderwater.jpg');
     margin-right:5px;
-
 }
-
-
 
 #GameImage2 {
-
-    background-image:
-    url('/images/JapaneseTemple.jpg');
-
+    background-image: url('/images/JapaneseTemple.jpg');
     margin-right:5px;
-
 }
-
-
 
 #GameImage3 {
-
-    background-image:
-    url('/images/MassiveChurch.jpg');
-
+    background-image: url('/images/MassiveChurch.jpg');
     margin-right:-10px;
-
     width:calc(33.333333% - 10px);
-
 }
 
-
 .game-image {
-
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-
 }
 
-
 </style>
-
-
 
 <script>
 if(typeof(Roblox) === "undefined"){
@@ -137,21 +95,13 @@ if(typeof(Roblox) === "undefined"){
 Roblox.Endpoints = Roblox.Endpoints || {};
 Roblox.Endpoints.Urls = Roblox.Endpoints.Urls || {};
 
-
 Roblox.Endpoints.Urls['/UserCheck/checkifinvalidusernameforsignup'] =
 'https://coalblox-api-yh3x.onrender.com/UserCheck/checkifinvalidusernameforsignup';
-
-
 </script>
-
 
 </head>
 
-
-
 <body id="rbx-body">
-
-
 
 <div class="navbar navbar-landing navbar-fixed-top" role="navigation">
 
@@ -159,10 +109,7 @@ Roblox.Endpoints.Urls['/UserCheck/checkifinvalidusernameforsignup'] =
 
 <div class="row">
 
-
-
 <div class="navbar-header">
-
 
 <button type="button"
         class="navbar-toggle"
@@ -173,8 +120,6 @@ Log In
 
 </button>
 
-
-
 <div class="navbar-brand hidden-xs">
 
 <img alt="Eggsplode Logo"
@@ -183,10 +128,7 @@ Log In
 
 </div>
 
-
-
 <ul id="TopLeftNavLinks" class="nav navbar-nav">
-
 
 <li id="PlayLink" class="pull-left">
 
@@ -196,8 +138,6 @@ Play
 
 </li>
 
-
-
 <li id="AboutLink" class="pull-left">
 
 <a href="#WhatsRobloxContainer">
@@ -205,8 +145,6 @@ About
 </a>
 
 </li>
-
-
 
 <li id="PlatformLink" class="pull-left">
 
@@ -218,24 +156,16 @@ Platforms
 
 </ul>
 
-
 </div>
-
-
-
 
 <div class="collapse navbar-collapse col-sm-6"
      id="LandingNavbar">
-
-
 
 <form name="loginForm"
       action="#"
       id="LogInForm"
       class="navbar-form form-inline navbar-right"
       method="post">
-
-
 
 <div class="form-group" id="LoginUsernameParent">
 
@@ -247,8 +177,6 @@ Platforms
 
 </div>
 
-
-
 <div class="form-group" id="LoginPasswordParent">
 
 <input id="LoginPassword"
@@ -258,8 +186,6 @@ Platforms
        name="password">
 
 </div>
-
-
 
 <div class="form-group">
 
@@ -271,8 +197,6 @@ Platforms
 
 </div>
 
-
-
 <a id="HeaderForgotPassword"
    class="navbar-link"
    href="#">
@@ -281,395 +205,348 @@ Forgot Username/Password?
 
 </a>
 
-
-
 </form>
 
-
-
-</div>
-
-
-
 </div>
 
 </div>
-
 </div>
+</div>
+
 <div class="container-fluid">
 
 <section class="row full-height-section" id="RollerContainer">
 
-    <div class="col-md-12 inner-full-height-section" id="InnerRollerContainer">
+<div class="col-md-12 inner-full-height-section" id="InnerRollerContainer">
 
-        <div id="MainCenterContainer" class="row">
+<div id="MainCenterContainer" class="row">
 
-            <div class="col-xs-12 col-md-6">
+<div class="col-xs-12 col-md-6">
 
-                <div id="MainLogo" class="text-right">
+<div id="MainLogo" class="text-right">
 
-                    <div id="LogoAndSlogan" class="text-center">
+<div id="LogoAndSlogan" class="text-center">
 
-                        <img id="MainLogoImage"
-                             title="Eggsplode!"
-                             class="center-block img-responsive"
-                             src="/eggsplode.png">
+<img id="MainLogoImage"
+     title="Eggsplode!"
+     class="center-block img-responsive"
+     src="/eggsplode.png">
 
-                        <div class="clearfix"></div>
+<div class="clearfix"></div>
 
-                        <h1>
-                            Powering Imagination<span>&#8482;</span>
-                        </h1>
+<h1>
+Powering Imagination<span>&#8482;</span>
+</h1>
 
-                    </div>
+</div>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
+<div class="col-xs-12 col-md-6">
 
-            <div class="col-xs-12 col-md-6">
+<div id="SignUpFormContainer">
 
-                <div id="SignUpFormContainer">
+<div class="rbx-login-partial-legacy">
 
-                    <div class="rbx-login-partial-legacy">
+<h3 class="text-center signup-header">
+Sign up and start having fun!
+</h3>
 
-                        <h3 class="text-center signup-header">
-                            Sign up and start having fun!
-                        </h3>
+<h3 class="text-center login-header" style="display:none;">
+Log in and start having fun!
+</h3>
 
-                        <h3 class="text-center login-header" style="display:none;">
-                            Log in and start having fun!
-                        </h3>
-
-
-                       <div class="signup-or-log-in"
+<div class="signup-or-log-in"
      ng-controller="SignupOrLoginController">
 
+<div class="signup-container">
 
-    <div class="signup-container">
+<div class="signup-input-area"
+     ng-form="signupForm">
 
+<div class="form-group">
 
-        <div class="signup-input-area"
-             ng-form="signupForm">
+<input id="signup-username"
+       name="username"
+       ng-model="signup.username"
+       class="form-control input-field"
+       placeholder="Username"
+       type="text">
 
+<p id="signup-usernameInputValidation"
+   class="form-control-label input-validation text-error">
+</p>
 
-            <div class="form-group">
+</div>
 
-                <input id="signup-username"
-                       name="username"
-                       ng-model="signup.username"
-                       class="form-control input-field"
-                       placeholder="Username"
-                       type="text">
+<div class="form-group">
 
-                <p id="signup-usernameInputValidation"
-                   class="form-control-label input-validation text-error">
-                </p>
+<input id="signup-password"
+       name="password"
+       ng-model="signup.password"
+       class="form-control input-field"
+       placeholder="Password"
+       type="password">
 
-            </div>
+<p id="signup-passwordInputValidation"
+   class="form-control-label input-validation text-error">
+</p>
 
+</div>
 
+<div class="form-group">
 
-            <div class="form-group">
+<input id="signup-password-confirm"
+       name="passwordConfirm"
+       ng-model="signup.passwordConfirm"
+       class="form-control input-field"
+       placeholder="Confirm Password"
+       type="password">
 
-                <input id="signup-password"
-                       name="password"
-                       ng-model="signup.password"
-                       class="form-control input-field"
-                       placeholder="Password"
-                       type="password">
+<p id="signup-passwordConfirmInputValidation"
+   class="form-control-label input-validation text-error">
+</p>
 
-                <p id="signup-passwordInputValidation"
-                   class="form-control-label input-validation text-error">
-                </p>
+</div>
 
-            </div>
+<div class="birthday-container">
 
+<div class="form-group">
 
+<div class="form-control fake-input-lg">
 
-            <div class="form-group">
+<label class="birthday-label">
+Birthday
+</label>
 
-                <input id="signup-password-confirm"
-                       name="passwordConfirm"
-                       ng-model="signup.passwordConfirm"
-                       class="form-control input-field"
-                       placeholder="Confirm Password"
-                       type="password">
+<div class="rbx-select-group month">
 
-                <p id="signup-passwordConfirmInputValidation"
-                   class="form-control-label input-validation text-error">
-                </p>
+<select id="MonthDropdown"
+        name="birthdayMonth"
+        ng-model="signup.birthdayMonth"
+        class="input-field rbx-select">
 
-            </div>
+<option value="" selected disabled>
+Month
+</option>
 
+<option value="Jan">January</option>
+<option value="Feb">February</option>
+<option value="Mar">March</option>
+<option value="Apr">April</option>
+<option value="May">May</option>
+<option value="Jun">June</option>
+<option value="Jul">July</option>
+<option value="Aug">August</option>
+<option value="Sep">September</option>
+<option value="Oct">October</option>
+<option value="Nov">November</option>
+<option value="Dec">December</option>
 
+</select>
 
-            <div class="birthday-container">
+</div>
 
-                <div class="form-group">
+<div class="rbx-select-group day">
 
-                    <div class="form-control fake-input-lg">
+<select id="DayDropdown"
+        name="birthdayDay"
+        ng-model="signup.birthdayDay"
+        class="input-field rbx-select">
 
-                        <label class="birthday-label">
-                            Birthday
-                        </label>
+<option value="" selected disabled>
+Day
+</option>
 
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
 
-                        <div class="rbx-select-group month">
+</select>
 
-                            <select id="MonthDropdown"
-                                    name="birthdayMonth"
-                                    ng-model="signup.birthdayMonth"
-                                    class="input-field rbx-select">
+</div>
 
-                                <option value="" selected disabled>
-                                    Month
-                                </option>
+<div class="rbx-select-group year">
 
-                                <option value="Jan">January</option>
-                                <option value="Feb">February</option>
-                                <option value="Mar">March</option>
-                                <option value="Apr">April</option>
-                                <option value="May">May</option>
-                                <option value="Jun">June</option>
-                                <option value="Jul">July</option>
-                                <option value="Aug">August</option>
-                                <option value="Sep">September</option>
-                                <option value="Oct">October</option>
-                                <option value="Nov">November</option>
-                                <option value="Dec">December</option>
+<select id="YearDropdown"
+        name="birthdayYear"
+        ng-model="signup.birthdayYear"
+        class="input-field rbx-select">
 
-                            </select>
+<option value="" selected disabled>
+Year
+</option>
 
-                        </div>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
 
+</select>
 
+</div>
 
-                        <div class="rbx-select-group day">
+</div>
 
-                            <select id="DayDropdown"
-                                    name="birthdayDay"
-                                    ng-model="signup.birthdayDay"
-                                    class="input-field rbx-select">
+</div>
 
-                                <option value="" selected disabled>
-                                    Day
-                                </option>
+</div>
 
-                                <option value="1">01</option>
-                                <option value="2">02</option>
-                                <option value="3">03</option>
-                                <option value="4">04</option>
-                                <option value="5">05</option>
-                                <option value="6">06</option>
-                                <option value="7">07</option>
-                                <option value="8">08</option>
-                                <option value="9">09</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-
-                            </select>
-
-                        </div>
-
-
-
-                        <div class="rbx-select-group year">
-
-                            <select id="YearDropdown"
-                                    name="birthdayYear"
-                                    ng-model="signup.birthdayYear"
-                                    class="input-field rbx-select">
-
-                                <option value="" selected disabled>
-                                    Year
-                                </option>
-                                <option value="2013">2013</option>
-                                <option value="2012">2012</option>
-                                <option value="2011">2011</option>
-                                <option value="2010">2010</option>
-                                <option value="2009">2009</option>
-                                <option value="2008">2008</option>
-                                <option value="2007">2007</option>
-                                <option value="2006">2006</option>
-                                <option value="2005">2005</option>
-                                <option value="2004">2004</option>
-                                <option value="2003">2003</option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <button id="signup-button"
+<button id="signup-button"
         type="button"
         class="btn-primary-md signup-submit-button"
         data-signup-api-url="https://coalblox-api-yh3x.onrender.com/signup/v1">
     Sign Up
 </button>
 
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-</section>
-
-
-<section class="row full-height-section" id="WhatsRobloxContainer">
-
-    <div class="col-md-12 inner-full-height-section">
-
-        <div class="row" id="InnerWhatsRobloxContainer1">
-
-            <div id="WhatIsRobloxTextBg"
-                 class="col-sm-5 col-sm-offset-6 col-xs-8 col-xs-offset-2">
-
-                <h1 class="text-center">
-                    WHAT IS EGGSPLODE?
-                </h1>
-
-                <p class="lead text-justify">
-                    Eggsplode! is a fan-made ROBLOX revival project inspired by
-                    the classic Roblox experience from 2014 to 2017.
-
-                    Our goal is to recreate the feeling of old Roblox with
-                    the simple website, classic games, and community-driven
-                    atmosphere.
-
-                    Eggsplode! is not affiliated with Roblox Corporation.
-                    It is a separate project built by fans who enjoy the
-                    older Roblox era and want to bring back that nostalgic
-                    experience.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="row" id="InnerWhatsRobloxContainer2">
-
-            <div id="GameImage1"
-                 class="col-sm-4 col-xs-12 game-image">
-            </div>
-
-
-            <div id="GameImage2"
-                 class="hidden-xs col-sm-4 game-image">
-            </div>
-
-
-            <div id="GameImage3"
-                 class="col-sm-4 hidden-xs game-image">
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<section id="DeviceSection">
-
-    <div class="row" id="RobloxDeviceText">
-
-        <div class="col-md-6 col-md-offset-3 text-center">
-
-            <h2>
-                EGGSPLODE ON YOUR DEVICE
-            </h2>
-
-            <p class="lead center-block">
-                You can access Eggsplode! on PC at the moment.
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <footer class="container-footer">
-
-        <div class="footer">
-
-
-            <p class="text-footer footer-note">
-
-                ROBLOX, characters, logos, names and related indicia are
-                trademarks of ROBLOX Corporation.
-
-                Eggsplode! is a fan project and is not affiliated with Roblox
-                Corporation.
-
-            </p>
-
-
-        </div>
-
-    </footer>
-
-
-</section>
-
+</div>
 
 </div>
 
+</div>
 
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="row full-height-section" id="WhatsRobloxContainer">
+
+<div class="col-md-12 inner-full-height-section">
+
+<div class="row" id="InnerWhatsRobloxContainer1">
+
+<div id="WhatIsRobloxTextBg"
+     class="col-sm-5 col-sm-offset-6 col-xs-8 col-xs-offset-2">
+
+<h1 class="text-center">
+WHAT IS EGGSPLODE?
+</h1>
+
+<p class="lead text-justify">
+Eggsplode! is a fan-made ROBLOX revival project inspired by
+the classic Roblox experience from 2014 to 2017.
+
+Our goal is to recreate the feeling of old Roblox with
+the simple website, classic games, and community-driven
+atmosphere.
+
+Eggsplode! is not affiliated with Roblox Corporation.
+It is a separate project built by fans who enjoy the
+older Roblox era and want to bring back that nostalgic
+experience.
+</p>
+
+</div>
+
+</div>
+
+<div class="row" id="InnerWhatsRobloxContainer2">
+
+<div id="GameImage1"
+     class="col-sm-4 col-xs-12 game-image">
+</div>
+
+<div id="GameImage2"
+     class="hidden-xs col-sm-4 game-image">
+</div>
+
+<div id="GameImage3"
+     class="col-sm-4 hidden-xs game-image">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="DeviceSection">
+
+<div class="row" id="RobloxDeviceText">
+
+<div class="col-md-6 col-md-offset-3 text-center">
+
+<h2>
+EGGSPLODE ON YOUR DEVICE
+</h2>
+
+<p class="lead center-block">
+You can access Eggsplode! on PC at the moment.
+</p>
+
+</div>
+
+</div>
+
+<footer class="container-footer">
+
+<div class="footer">
+
+<p class="text-footer footer-note">
+
+ROBLOX, characters, logos, names and related indicia are
+trademarks of ROBLOX Corporation.
+
+Eggsplode! is a fan project and is not affiliated with Roblox
+Corporation.
+
+</p>
+
+</div>
+
+</footer>
+
+</section>
+
+</div>
 
 <script src="/js/acb41411e84505341e7b214a6efd9fc2.js"></script>
 <script src="/js/df595d127e648dd5b4c021edc6d81268.js"></script>
-
 
 <script>
 window.Roblox = window.Roblox || {};
@@ -679,32 +556,24 @@ Roblox.config = Roblox.config || {
     paths: {}
 };
 
-
 Roblox.XsrfToken = Roblox.XsrfToken || {
     setToken: function(){}
 };
 
-
 RobloxEventManager.initialize(true);
 </script>
 
-
-
 <script>
-
 document.getElementById("LogInForm")
 .addEventListener("submit", async function(e){
 
     e.preventDefault();
 
-
     const username =
         document.getElementById("LoginUsername").value;
 
-
     const password =
         document.getElementById("LoginPassword").value;
-
 
     try {
 
@@ -718,27 +587,23 @@ document.getElementById("LogInForm")
                     "application/x-www-form-urlencoded"
                 },
 
-                body:new URLSearchParams({
+                body: new URLSearchParams({
                     username,
                     password
                 })
             }
         );
 
-
         const data = await response.json();
 
-console.log(data);
+        console.log(data);
 
-if (data.success) {
-    window.location.replace("/games");
-}
-        else {
-
-            alert(data.message);
-
+        if (data.success) {
+            window.location.replace("/games");
         }
-
+        else {
+            alert(data.message);
+        }
 
     }
     catch(err){
@@ -748,10 +613,7 @@ if (data.success) {
 
     }
 
-
 });
-
-
 </script>
 
 <script>
@@ -798,11 +660,11 @@ document.getElementById("signup-button").addEventListener("click", async functio
         console.log(data);
 
         if (data.success) {
-    window.location.replace("/games");
-    return;
-} else {
-    alert(data.message || "Signup failed.");
-}
+            window.location.replace("/games");
+            return;
+        } else {
+            alert(data.message || "Signup failed.");
+        }
 
     } catch (err) {
         console.error(err);
@@ -816,9 +678,5 @@ document.getElementById("signup-button").addEventListener("click", async functio
 
 </html>
 
-
-
-
 <!-- redeploy -->
-
 <!-- redeploy -->
